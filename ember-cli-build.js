@@ -14,5 +14,9 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+  app.import(app.bowerDirectory + '/select2/dist/css/select2.css');
+  app.import(app.bowerDirectory + '/select2/dist/js/select2.js');
+  app.import(app.bowerDirectory + '/select2/dist/js/i18n/en.js');
+
   return app.toTree();
 };

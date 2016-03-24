@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-select2-test-helpe'
+  name: 'ember-select2-with-test-helper',
+
+    isDevelopingAddon: function() {
+        return true;
+    }
 };

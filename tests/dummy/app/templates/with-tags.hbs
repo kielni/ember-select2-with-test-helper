@@ -1,0 +1,28 @@
+<h2 id="title">Select multiple with tags enabled</h2>
+<div>
+    {{#select2-select
+        action="onChangeSelect"
+        config=config
+        items=items
+        selectId="selectWithTags"}}
+
+        <select id="selectWithTags" multiple>
+            {{#each items as |item|}}
+                <option value="{{item.id}}" selected={{item.selected}} data-label="{{item.label}}" title="{{item.label}}">
+                    {{item.label}} ({{item.count}})
+                </option>
+            {{/each}}
+        </select>
+
+    {{/select2-select}}
+</div>
+
+<h3>log ({{log.length}})</h3>
+<div id="log">
+    <ul>
+    {{#each log as |item|}}
+        <li>{{item}}</li>
+    {{/each}}
+    </ul>
+</div>
+{{outlet}}

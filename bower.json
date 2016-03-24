@@ -1,5 +1,5 @@
 {
-  "name": "ember-select2-test-helpe",
+  "name": "ember-select2-with-test-helper",
   "dependencies": {
     "ember": "1.13.10",
     "ember-cli-shims": "0.0.6",
@@ -8,8 +8,10 @@
     "ember-load-initializers": "0.1.7",
     "ember-qunit": "0.4.16",
     "ember-qunit-notifications": "0.1.0",
-    "jquery": "^1.11.3",
+    "jquery": "1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
-    "qunit": "~1.20.0"
+    "qunit": "~1.20.0",
+    "select2": "~4.0.1",
+    "ceibo": "1.1.0"
   }
 }
