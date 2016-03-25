@@ -2,11 +2,7 @@ import { test } from 'qunit';
 import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
 import page from '../pages/demo';
 
-moduleForAcceptance('Acceptance | with tags', {
-    afterEach: function() {
-        
-    }
-});
+moduleForAcceptance('Acceptance | with tags');
 
 test('visiting /with-tags', function(assert) {
     page.visit({page: 'with-tags'});

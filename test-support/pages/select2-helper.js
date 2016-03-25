@@ -43,7 +43,6 @@ export default {
     },
     searchResultsCount() {
         // can't use text helper because .select2-results is outside the testing container
-        console.log('results=', $('.select2-results__options li:visible'));
         return $('.select2-results__options li:visible').length;
     },
 };

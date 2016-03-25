@@ -7,8 +7,7 @@ export default Ember.Component.extend({
     classNames: ['select2-component'],
 
     setup: function() {
-        let selectId = '#'+this.get('selectId');
-        let $select = Ember.$(selectId);
+        let $select = Ember.$('#'+this.get('selectId'));
         this.buildSelect2();
         $select.on('select2:select', () => {
             this.sendAction('action', $select.val(), 'select');
